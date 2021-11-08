@@ -1,0 +1,40 @@
+body {
+    background-color:rgb(167, 203, 204);
+    margin: 10px;
+}
+
+h1 {
+    background-color:rgb(192, 229, 243);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+h3 {
+    background-color:rgb(192, 229, 243);
+    padding: 2px;
+    border-radius: 2px;
+}
+ 
+.player_1 {
+    background-color:rgb(247, 154, 154);
+    max-width: 30%;
+    padding-left: 5px;
+}
+
+.player_2 {
+    background-color: rgb(128, 177, 241);
+    max-width: 30%;
+    padding-left: 5px;
+}
+
+.win_result {
+    background-color: rgb(134, 221, 131);
+    max-width: 30%;
+    padding-left: 5px;
+}
+
+.draw_result {
+    background-color: rgb(250, 230, 114);
+    max-width: 30%;
+    padding-left: 5px;
+}

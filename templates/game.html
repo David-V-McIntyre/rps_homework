@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="player_1"><p>{{player_1.name}} chooses {{ player_1.choice}} </p></div>
+
+<div class="player_2"><p>{{player_2.name}} chooses {{ player_2.choice}} </p></div>
+
+<!-- here we are taking the player values that we passed in from 
+the game_controller and using Jinja to display them to the user-->
+
+<h3>And the result is:</h3>
+
+{% if winner != None %}
+
+<!-- this detemines if there is or is not a winner -->
+<div class="win_result"><p>{{winner.name}} wins by playing {{winner.choice}}</p></div>
+<!-- if there is a winner this will display both the winner and the 
+winners choice - we assign the winner values from the player in the game class -->
+{% else %}
+<div class="draw_result"><p>It's a draw!</p></div> {% endif %} {% endblock %}
+
+<!-- this only runs if no winner exists i.e. the game is a draw. If it is a draw 
+then it will print the string in the p -->
